@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_144" data-name="Rectangle 144" width="18" height="18" transform="translate(1144 310)" fill="#ff4e4e" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_12" data-name="Group 12" transform="translate(-1133 -299)">
+    <rect id="Rectangle_143" data-name="Rectangle 143" width="40" height="40" rx="5" transform="translate(1133 299)" fill="#fdd" opacity="0.5"/>
+    <g id="Mask_Group_5" data-name="Mask Group 5" clip-path="url(#clip-path)">
+      <g id="people-fill" transform="translate(1144 310)">
+        <path id="Path_13" data-name="Path 13" d="M7.875,15.75A1.1,1.1,0,0,1,6.75,14.625c0-1.125,1.125-4.5,5.625-4.5S18,13.5,18,14.625a1.1,1.1,0,0,1-1.125,1.125ZM12.375,9A3.375,3.375,0,1,0,9,5.625,3.375,3.375,0,0,0,12.375,9Z" fill="#ff4e4e"/>
+        <path id="Path_14" data-name="Path 14" d="M5.868,15.75a2.518,2.518,0,0,1-.243-1.125A5.369,5.369,0,0,1,7.8,10.44a7.116,7.116,0,0,0-2.178-.315C1.125,10.125,0,13.5,0,14.625A1.1,1.1,0,0,0,1.125,15.75Z" fill="#ff4e4e" fill-rule="evenodd"/>
+        <path id="Path_15" data-name="Path 15" d="M5.063,9A2.813,2.813,0,1,0,2.25,6.188,2.813,2.813,0,0,0,5.063,9Z" fill="#ff4e4e"/>
+      </g>
+    </g>
+  </g>
+</svg>

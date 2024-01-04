@@ -1,0 +1,89 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#notfound {
+	// position: relative;
+	// height: 100vh;
+	background-color: $error_bg;
+}
+
+#notfound {
+	.notfound {
+		margin: 40px auto;
+	}
+}
+
+.notfound {
+	max-width: 460px;
+	width: 100%;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.notfound {
+	.notfound-404 {
+		z-index: -1;
+	}
+}
+
+.notfound {
+	.notfound-404 {
+		h1 {
+			span {
+				text-shadow: 2px 2px 0px #ffab00, -2px -2px 0px #ffab00,
+					0px 0px 8px #ff8700;
+			}
+		}
+	}
+}
+
+.notfound {
+	p {
+		font-family: "Josefin Sans", sans-serif;
+		color: #191449;
+		font-size: 16px;
+		font-weight: bolder;
+		margin-top: 0px;
+		margin-bottom: 15px;
+	}
+}
+.notfound {
+	a {
+		// font-family: "Josefin Sans", sans-serif;
+		font-size: 14px;
+		text-decoration: none;
+		// text-transform: uppercase;
+		background: transparent;
+		color: $white;
+		border: 1px solid $color;
+		background-color: $color;
+		display: inline-block;
+		padding: 10px 25px;
+		font-weight: 700;
+		-webkit-transition: 0.2s all;
+		transition: 0.2s all;
+		border-radius: 5px;
+		&:hover{
+			background-color: $color-light;
+			border: 1px solid $color-light;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	.notfound {
+		.notfound-404 {
+			h1 {
+				font-size: 112px;
+			}
+		}
+	}
+}

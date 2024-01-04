@@ -1,0 +1,64 @@
+.sponsored-list {
+	background-color: white;
+	margin: 20px 0;
+	padding: 20px 0;
+	.card{
+		box-shadow: 0px 6px 16px 2px rgba(3, 32, 126, 0.062);
+		transition: 0.5s;
+		&:hover {
+			box-shadow: 0px 10px 10px 0px rgba(1, 18, 73, 0.151);
+		}
+	}
+}
+.adContainer {
+	background: white;
+	// border-radius: 10px;
+	.sponsored{
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: $color-light;
+		font-size: 12px;
+		color: $white;
+		text-transform: uppercase;
+		line-height: 15px;
+		padding: 4px 6px;
+		padding-top: 5px;
+		border-top-left-radius: 3px;
+		&:before{
+			content: "";
+			border: 13px solid $color-light;
+			right: -26px;
+			top: 0;
+			border-bottom-color: transparent;
+			border-right-color: transparent;
+			border-top: none;
+			position: absolute;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			border: 13px solid $color-light;
+			right: -26px;
+			bottom: 0;
+			border-right-color: transparent;
+			border-top-color: transparent;
+			border-bottom: none;
+		}
+	}
+	.adimage {
+		width: 100%;
+		height: auto;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+		.ad-bg {
+			background: rgba(0, 0, 0, 0.4);
+			border-radius: 10px;
+		}
+		p {
+			text-align: left;
+		}
+	}
+}

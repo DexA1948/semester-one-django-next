@@ -1,0 +1,116 @@
+.edit-profile {
+	padding: 2rem 0;
+	box-sizing: border-box !important;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: min-content;
+	grid-auto-rows: min-content;
+	row-gap: 1rem;
+
+	/*start  global for dashboard */
+	h2 {
+		color: $color;
+		font-size: 1.5rem;
+		margin: 0.125rem 0;
+		font-weight: 600;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	.head {
+		span {
+			cursor: pointer;
+		}
+	}
+
+	.welcome-text {
+		padding: 0;
+		margin: 0;
+
+		p {
+			color: $color;
+			margin: 0;
+			font-weight: 500;
+		}
+	}
+
+	.profile-info {
+		background-color: $white;
+		padding: 2rem;
+		border-radius: 16px;
+		.profile-image {
+			display: flex;
+			padding: 2rem;
+
+			img {
+				width: 180px;
+				height: 180px;
+				object-fit: cover;
+				object-position: center;
+				border-radius: 50%;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.profile-desc {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 2rem 0;
+
+		.desc {
+			display: flex;
+			justify-content: center;
+			width: 90%;
+			form {
+				width: 100%;
+				.outer {
+					display: flex;
+					gap: 2rem;
+                      flex-wrap:wrap;
+					margin-bottom: 1rem;
+
+					.input-wrapper {
+						flex-grow: 1;
+						display: flex;
+                      
+						flex-direction: column;
+						label {
+						}
+
+						input {
+							outline: none;
+							border: 1.5px solid $gray;
+							padding: 5px 10px;
+							font-size: 13px;
+							color: $gray;
+						}
+
+						select {
+							outline: none;
+							border: 1.5px solid $gray;
+							padding: 5px 10px;
+							font-size: 13px;
+							color: $gray;
+						}
+					}
+				}
+			}
+		}
+		.button {
+			margin-top: 4rem;
+			a {
+				padding: 10px 22px;
+				background-color: $color;
+				color: #fff;
+				border-radius: 1.5rem;
+				font-size: 13px;
+				text-decoration: none;
+			}
+		}
+	}
+}

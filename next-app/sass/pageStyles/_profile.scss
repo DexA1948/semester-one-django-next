@@ -1,0 +1,184 @@
+.profile {
+	padding: 2rem 0;
+	box-sizing: border-box !important;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: min-content;
+	grid-auto-rows: min-content;
+	row-gap: 1rem;
+
+	/*start  global for dashboard */
+
+	a {
+		text-decoration:none;
+	}
+	h2 {
+		color: $color;
+		font-size: 1.5rem;
+		font-weight: 600;
+		// margin: 1rem 0;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	.head {
+		span {
+			display: block !important;
+			cursor: pointer;
+		}
+	}
+
+	/*end  global for dashboard */
+
+	.welcome-text {
+		padding: 0;
+		margin: 0;
+		p {
+			color: $color;
+			padding: 0;
+			margin: 0;
+			font-weight: 500;
+		}
+	}
+
+	.profile-info {
+		display: flex;
+		border-radius: 10px;
+		padding: 2rem;
+		background-color: $white;
+		.profile-image {
+			flex: 1 1 min-content;
+			img {
+				width: 210px;
+				height: 210px;
+				object-fit: cover;
+				object-position: center;
+				border-radius: 50%;
+			}
+		}
+
+		.profile-desc {
+			flex: 1 2 65%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+
+			.desc {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+				color: $color;
+
+				p {
+					display: flex;
+					align-items: flex-start;
+					gap: 5px;
+				}
+			}
+
+			.button {
+				a {
+					padding: 10px 15px;
+					background-color: $color;
+					color: #fff;
+					border-radius: 1.5rem;
+					font-size: 13px;
+				}
+			}
+		}
+	}
+
+	.document {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: min-content;
+		grid-auto-rows: min-content;
+		gap: 1rem;
+
+		.student-document {
+			background: $white;
+
+			border-radius: 10px;
+			padding-right: 1rem;
+
+			.head {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				border-bottom: 1.5px solid $color;
+				color: $color;
+				font-size: 1rem;
+
+				.title {
+					margin: 0;
+					padding: 1rem;
+					text-transform: uppercase;
+				}
+
+				span {
+					display: inline-block;
+					font-size: 1.25rem;
+					cursor: pointer;
+					z-index: 99999;
+				}
+			}
+
+			.document-desc {
+				padding: 1rem;
+				min-height: 100px;
+
+				form {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 1rem;
+
+					input {
+						width: min-content;
+						padding: 5px;
+						font-size: 13px;
+						outline: none;
+						border: 1.5px solid $gray;
+						border-radius: 5px;
+					}
+
+					.button {
+						a {
+							padding: 5px 14px;
+							background-color: $color;
+							color: #fff;
+							border-radius: 1.5rem;
+							font-size: 13px;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.profile {
+		.profile-info {
+			flex-direction: column !important;
+			gap: 1rem;
+
+			.profile-image {
+				display: flex;
+				justify-content: center;
+
+				img {
+					margin: 0 auto;
+				}
+			}
+		}
+		.document {
+			grid-template-columns: 1fr !important;
+
+			gap: 1rem;
+		}
+	}
+}

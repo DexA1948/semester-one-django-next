@@ -1,0 +1,178 @@
+.header {
+	background-color: #fff;
+	padding: 10px 0;
+	img {
+		cursor: pointer;
+	}
+
+	.cnav {
+		z-index: 2;
+		width: 100%;
+	}
+	.rnav {
+		z-index: 2;
+	}
+	.logo {
+		z-index: 2;
+		margin-right: 40px;
+	}
+	.menu-btn {
+		z-index: 2;
+	}
+	.nav-item {
+		a {
+			font-size: 15px;
+			font-weight: 500;
+			color: #454d58;
+			padding: 8px 12px;
+			display: block;
+			border-radius: 0.25rem;
+			text-decoration: none;
+			&:hover {
+				color: $hover-active-nav;
+				font-weight: 600;
+			}
+		}
+		&.active-nav {
+			color: $hover-active-nav;
+			font-weight: 700;
+		}
+	}
+	.auth-btns {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		padding: 10px 19px;
+		background: $color;
+		border-radius: 5px;
+		span {
+			color: $light;
+		}
+		.auth {
+			color: $white;
+			cursor: pointer;
+			text-decoration: none;
+		}
+	}
+	.menu-btn {
+		display: none;
+		.icon {
+			cursor: pointer;
+		}
+	}
+	@media screen and (max-width: 1102px) {
+		.cnav {
+			display: none;
+		}
+		.rnav {
+			display: none;
+		}
+		.menu-btn {
+			display: block;
+		}
+	}
+}
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	.nav-item {
+		padding: 8px 0 8px 10px;
+		a {
+			color: #224264;
+			font-weight: 700;
+		}
+		.nav-link {
+			color: $black;
+		}
+		.active-nav {
+			color: $color;
+		}
+	}
+	.custom_dropdown {
+		.nav-link {
+			padding: 8px 0 8px 10px;
+			color: #224264;
+			font-weight: 700;
+		}
+	}
+	.rnav {
+		z-index: 3;
+		margin: 10px auto auto 10px;
+		.auth-btns {
+			display: flex;
+			flex-wrap: nowrap;
+			flex-direction: row;
+			padding: 10px 19px;
+			background: $color;
+			border-radius: 5px;
+			span {
+				color: $light;
+			}
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// styling added for popup
+
+.auth-bar {
+	z-index: 999999;
+	position: relative;
+	.popup {
+		position: absolute;
+		left: auto;
+		right: auto;
+		margin: 0 auto;
+		width: auto;
+		padding: 1rem 0;
+		background: $white;
+		margin-top: 5px;
+		border-radius: 5px;
+		transform: translatex(-50%);
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			li {
+				cursor: pointer;
+				padding: 0.3rem 1rem;
+
+				&:hover {
+					background: $color;
+					color: $white;
+				}
+
+				a {
+					&:hover {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1105px) {
+	.auth-bar {
+		z-index: 999999;
+		position: relative;
+		.popup {
+			position: absolute;
+			left: auto;
+			right: auto;
+			margin: 0 auto;
+			width: auto;
+			padding: 1rem 0;
+			background: $white;
+			margin-top: 5px;
+			border-radius: 5px;
+			transform: translatex(0%);
+
+		}
+	}
+}

@@ -1,0 +1,97 @@
+.custom_dropdown {
+    z-index: 4;
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+    .nav-link{
+      font-size: 15px;
+      font-weight: 500;
+      color: #454D58;
+      padding: 8px 12px;
+      cursor: pointer;
+      .icon{
+        transform: rotate(270Deg);
+        transition: 0.3s;
+      }
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .dropdown-content {
+    border: 1px solid rgba(128, 128, 128, 0.205);
+    transition: 0.3s;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    padding: 10px 0 0 0;
+    right: 10px;
+    background-color: $white;
+    min-width: 140px;
+    max-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.041);
+    z-index: 4;
+    .dropdown-item {
+      background: none;
+      padding: none;
+      .sub-dropdown{
+        display: inline-block;
+        right: 0;
+        position: absolute;
+      }
+      &:hover {
+        background-color: $color-light;
+        .dropdown-link {
+          color: $white;
+        }
+      }
+    }
+    .dropdown-link {
+      font-size: 15px;
+      font-weight: 500;
+      color: #454D58;
+      padding: 10px;
+      word-wrap: break-word;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  .dropdown-content::before {
+    content: '';
+    border-top: 1px solid rgba(128, 128, 128, 0.185);
+    border-left: 1px solid rgba(128, 128, 128, 0.226);
+    z-index: -1;
+    position: absolute;
+    top: -10px;
+    right: 28px;
+    width: 20px;
+    height: 20px;
+    background: $white;
+    transform: rotate(45deg);
+  }
+
+  .dropdown-content li {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+  }
+  .custom_dropdown:hover{
+    .nav-link{
+      .icon{
+        transform: rotate(90Deg);
+      }
+    }
+  }
+
+  .custom_dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  @media screen and (max-width: 1102px) {
+    .dropdown-content {
+      position: relative;
+      left: 10px;
+    }
+  }
